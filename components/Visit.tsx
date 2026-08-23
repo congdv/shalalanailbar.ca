@@ -81,7 +81,7 @@ export default function Visit() {
   const status = useOpenStatus();
 
   return (
-    <section className="relative overflow-hidden bg-inverse-surface text-inverse-on-surface py-section-padding-mobile md:py-section-padding-desktop px-6">
+    <section className="relative overflow-hidden bg-on-primary-fixed text-inverse-on-surface py-section-padding-mobile md:py-section-padding-desktop px-6">
       {/* Decorative background blobs, matching the Hero's treatment */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary-fixed-dim/20 rounded-full blur-3xl -z-0" />
       <div className="absolute -bottom-32 right-1/4 w-80 h-80 bg-primary-fixed-dim/10 rounded-full blur-3xl -z-0" />
