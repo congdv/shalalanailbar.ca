@@ -12,8 +12,8 @@ export default function About() {
             <Image
               src="/images/about-salon.jpg"
               alt="A serene, minimalist salon interior with soft cream walls, warm ambient lighting, and elegant, modern seating. A pristine manicure station is in focus, reflecting a luxurious and tranquil atmosphere."
-              width={512}
-              height={286}
+              width={1376}
+              height={768}
               className="w-full h-full object-cover rounded-t-full"
             />
           </div>

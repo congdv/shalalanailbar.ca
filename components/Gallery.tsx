@@ -50,8 +50,8 @@ export default function Gallery() {
               <Image
                 src={img.src}
                 alt={img.alt}
-                width={512}
-                height={512}
+                width={1408}
+                height={768}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>

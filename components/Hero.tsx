@@ -44,9 +44,10 @@ export default function Hero() {
           <Image
             src="/images/hero-manicure.jpg"
             alt="Close up of a perfect, minimalist almond-shaped manicure with a glossy nude finish and a single delicate gold flake accent on one nail. Soft, high-key lighting."
-            width={512}
-            height={279}
+            width={1408}
+            height={768}
             className="w-full h-full object-cover rounded-full"
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-full mix-blend-overlay" />
         </div>
