@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
 import BookingCTA from "@/components/BookingCTA";
+import Visit from "@/components/Visit";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Services />
         <Gallery />
         <BookingCTA />
+        <Visit />
       </main>
       <Footer />
     </>
