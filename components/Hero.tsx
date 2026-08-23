@@ -12,9 +12,9 @@ export default function Hero() {
         <div className="w-32 h-32 md:hidden mb-8 rounded-full shadow-[0_0_40px_rgba(212,175,55,0.15)] flex items-center justify-center bg-white p-4 mx-auto">
           <Image
             alt="Shalala Nail Bar Logo"
-            src="/images/logo.png"
-            width={512}
-            height={512}
+            src="/images/logo-mark.png"
+            width={700}
+            height={700}
             className="w-full h-full object-contain rounded-full"
           />
         </div>

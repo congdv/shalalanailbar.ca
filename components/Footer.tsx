@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const FOOTER_LINKS = ["Services", "Gallery", "About", "Contact", "Privacy"];
 
 export default function Footer() {
@@ -6,9 +8,13 @@ export default function Footer() {
   return (
     <footer className="bg-surface-container dark:bg-inverse-surface py-section-padding-mobile md:py-section-padding-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max-width mx-auto px-6">
       <div className="space-y-4">
-        <div className="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed">
-          SHALALA
-        </div>
+        <Image
+          src="/images/logo-full.png"
+          alt="Shalala Nail Bar"
+          width={857}
+          height={1053}
+          className="h-32 w-auto object-contain"
+        />
         <p className="font-body-md text-body-md text-on-surface-variant max-w-xs font-light">
           Elevated nail care in a serene sanctuary.
         </p>

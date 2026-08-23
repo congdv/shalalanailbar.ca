@@ -1,8 +1,20 @@
+import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 flex justify-between items-center w-full px-6 py-4 max-w-container-max-width mx-auto">
-      <div className="h-10 w-auto flex items-center font-display-lg text-primary text-2xl tracking-widest">
-        SHALALA
+      <div className="h-10 flex items-center gap-2">
+        <Image
+          src="/images/logo-mark.png"
+          alt="Shalala Nail Bar"
+          width={700}
+          height={700}
+          className="h-10 w-10 object-contain"
+          priority
+        />
+        <span className="font-display-lg text-primary text-2xl tracking-widest">
+          SHALALA
+        </span>
       </div>
       <nav className="hidden md:flex space-x-8">
         <a
