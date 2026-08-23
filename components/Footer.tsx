@@ -1,15 +1,13 @@
 import Image from "next/image";
+import { ADDRESS, CONTACT_EMAIL, SOCIAL } from "@/lib/business";
 
 const FOOTER_LINKS = ["Services", "Gallery", "About", "Contact"];
-
-// TODO: swap in the real address, email, and social handles.
-const CONTACT_EMAIL = "hello@shalalanailbar.ca";
-const CONTACT_ADDRESS = "123 Main Street, Toronto, ON";
+const CONTACT_ADDRESS = `${ADDRESS.street}, ${ADDRESS.city}, ${ADDRESS.region}`;
 
 const SOCIAL_LINKS = [
   {
     name: "Facebook",
-    href: "#",
+    href: SOCIAL.facebook,
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
         <path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.87.24-1.46 1.49-1.46H16.5V4.36C16.24 4.32 15.36 4.25 14.33 4.25c-2.15 0-3.63 1.31-3.63 3.72V10.5H8.19v3h2.51V21h2.8Z" />
@@ -18,7 +16,7 @@ const SOCIAL_LINKS = [
   },
   {
     name: "Instagram",
-    href: "#",
+    href: SOCIAL.instagram,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="w-5 h-5">
         <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />

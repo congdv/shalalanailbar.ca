@@ -1,40 +1,16 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import {
+  ADDRESS,
+  HOURS_ROWS,
+  MAPS_HREF,
+  PHONE_DISPLAY,
+  PHONE_HREF,
+  SCHEDULE,
+} from "@/lib/business";
 
-// TODO: swap in the real address, phone number, and map link.
-const ADDRESS_LINE = "123 Main Street";
-const ADDRESS_UNIT = "Unit 4";
-const ADDRESS_DETAIL = "Toronto, ON M5V 2T6 · Free parking out front";
-const PHONE_DISPLAY = "(416) 555-0142";
-const PHONE_HREF = "tel:+14165550142";
-const MAPS_HREF =
-  "https://maps.google.com/?q=" + encodeURIComponent(`${ADDRESS_LINE}, ${ADDRESS_DETAIL}`);
-
-type DaySchedule = {
-  label: string;
-  display: string;
-  // minutes from midnight; null = closed all day
-  open: number | null;
-  close: number | null;
-};
-
-// Index matches Date#getDay(): 0 = Sunday ... 6 = Saturday
-const SCHEDULE: DaySchedule[] = [
-  { label: "Sunday", display: "10:00 — 4:00", open: 10 * 60, close: 16 * 60 },
-  { label: "Mon – Fri", display: "9:30 — 7:00", open: 9 * 60 + 30, close: 19 * 60 },
-  { label: "Mon – Fri", display: "9:30 — 7:00", open: 9 * 60 + 30, close: 19 * 60 },
-  { label: "Mon – Fri", display: "9:30 — 7:00", open: 9 * 60 + 30, close: 19 * 60 },
-  { label: "Mon – Fri", display: "9:30 — 7:00", open: 9 * 60 + 30, close: 19 * 60 },
-  { label: "Mon – Fri", display: "9:30 — 7:00", open: 9 * 60 + 30, close: 19 * 60 },
-  { label: "Saturday", display: "9:30 — 6:00", open: 9 * 60 + 30, close: 18 * 60 },
-];
-
-const HOURS_ROWS = [
-  { label: "Mon – Fri", display: "9:30 — 7:00" },
-  { label: "Saturday", display: "9:30 — 6:00" },
-  { label: "Sunday", display: "10:00 — 4:00" },
-];
+const ADDRESS_DETAIL = `${ADDRESS.city}, ${ADDRESS.region} ${ADDRESS.postalCode} · Free parking out front`;
 
 function formatClock(minutes: number) {
   const h24 = Math.floor(minutes / 60);
@@ -92,10 +68,10 @@ export default function Visit() {
             Come See Us
           </p>
           <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg">
-            {ADDRESS_LINE},
+            {ADDRESS.street},
             <br />
             <span className="font-display-lg italic text-primary-fixed-dim">
-              {ADDRESS_UNIT}
+              {ADDRESS.unit}
             </span>
           </h2>
           <p className="font-body-md text-body-md text-inverse-on-surface/70 font-light">
