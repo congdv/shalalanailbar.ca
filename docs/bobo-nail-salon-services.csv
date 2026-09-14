@@ -1,0 +1,34 @@
+Category,Service,Price,Duration,Price Type
+Nail Extension,Full Set Solar,$50,60 min,From
+Nail Extension,Fill Solar,$40,45 min,From
+Nail Extension,Full Set Bio Gel,$50,60 min,From
+Nail Extension,Full Set UV Gel,$45,45 min,From
+Nail Extension,Fill UV Gel,$35,30 min,From
+Nail Extension,Full Set Acrylic,$35,30 min,From
+Nail Extension,Fill Acrylic,$30,30 min,From
+Nail Extension,Fill Bio Gel,$40,45 min,Fixed
+Manicure & Pedicure,Manicure Regular,$25,30 min,Fixed
+Manicure & Pedicure,Pedicure Regular,$35,30 min,Fixed
+Manicure & Pedicure,Manicure Shellac,$35,30 min,Fixed
+Manicure & Pedicure,Pedicure Shellac,$45,45 min,Fixed
+Manicure & Pedicure,Manicure & Pedicure Regular,$55,60 min,Fixed
+Manicure & Pedicure,Manicure Shellac & Pedicure Shellac,$75,60 min,Fixed
+Manicure & Pedicure,Pedicure Shellac & Manicure Regular,$65,60 min,Fixed
+Manicure & Pedicure,Shellac Polish Change (Toe),$30,30 min,Fixed
+Manicure & Pedicure,Shellac Polish Change (Hand),$25,30 min,Fixed
+Additional Services,Toe Polish Change,$15,15 min,Fixed
+Additional Services,Hand Polish Change,$10,15 min,Fixed
+Additional Services,Nail Art,$5,15 min,From
+Additional Services,Take Off Only,$15,15 min,Fixed
+Waxing,Brazilian Wax,$40,45 min,From
+Waxing,Full Leg Wax,$45,45 min,From
+Waxing,Half Leg Wax,$25,30 min,Fixed
+Waxing,Full Arm Wax,$30,30 min,Fixed
+Waxing,Half Arm Wax,$20,15 min,Fixed
+Waxing,Full Face Wax,$30,30 min,Fixed
+Waxing,Under Arm Wax,$15,15 min,Fixed
+Waxing,Bikini Wax,$25,30 min,Fixed
+Waxing,Back Wax,$40,45 min,Fixed
+Waxing,Eyebrow Wax,$10,15 min,Fixed
+Waxing,Eyebrow + Tinting,$25,30 min,Fixed
+Waxing,Lip or Chin Wax,$5,15 min,Fixed

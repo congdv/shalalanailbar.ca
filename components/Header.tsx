@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { BOOKING_URL } from "@/lib/business";
 
 export default function Header() {
   return (
-    <header className="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 flex justify-between items-center w-full px-6 py-4 max-w-container-max-width mx-auto">
+    <header className="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center w-full px-6 py-4 max-w-container-max-width mx-auto">
       <div className="h-10 flex items-center gap-2">
         <Image
           src="/images/logo-mark.png"
@@ -37,7 +38,9 @@ export default function Header() {
         </a>
       </nav>
       <a
-        href="#book"
+        href={BOOKING_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className="font-label-sm text-label-sm text-primary dark:text-primary-fixed font-bold border-b border-primary hover:text-primary transition-colors duration-300"
       >
         BOOK NOW

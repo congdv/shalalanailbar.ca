@@ -3,6 +3,7 @@
 import { useSyncExternalStore } from "react";
 import {
   ADDRESS,
+  BOOKING_URL,
   HOURS_ROWS,
   MAPS_HREF,
   PHONE_DISPLAY,
@@ -71,7 +72,7 @@ export default function Visit() {
             {ADDRESS.street},
             <br />
             <span className="font-display-lg italic text-primary-fixed-dim">
-              {ADDRESS.unit}
+              {ADDRESS.city}
             </span>
           </h2>
           <p className="font-body-md text-body-md text-inverse-on-surface/70 font-light">
@@ -79,7 +80,9 @@ export default function Visit() {
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <a
-              href="#book"
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary inline-flex items-center gap-2 px-6 py-3 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:opacity-90 transition-opacity"
             >
               Book Online <span aria-hidden="true">→</span>

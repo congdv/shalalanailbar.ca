@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BOOKING_URL } from "@/lib/business";
 
 export default function Hero() {
   return (
@@ -31,7 +32,9 @@ export default function Hero() {
         </div>
         <div className="pt-8">
           <a
-            href="#book"
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary inline-flex items-center justify-center px-8 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:opacity-90 transition-opacity"
           >
             Book Appointment

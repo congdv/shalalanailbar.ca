@@ -5,6 +5,7 @@ import { useState } from "react";
 type ServiceItem = {
   name: string;
   price: string;
+  duration: string;
 };
 
 type ServiceGroup = {
@@ -14,24 +15,56 @@ type ServiceGroup = {
 
 const SERVICE_GROUPS: ServiceGroup[] = [
   {
-    title: "Nail Care",
+    title: "Nail Extension",
     items: [
-      { name: "Signature Manicure", price: "$45" },
-      { name: "Luxury Pedicure", price: "$75" },
+      { name: "Full Set Solar", price: "From $50", duration: "60 min" },
+      { name: "Fill Solar", price: "From $40", duration: "45 min" },
+      { name: "Full Set Bio Gel", price: "From $50", duration: "60 min" },
+      { name: "Full Set UV Gel", price: "From $45", duration: "45 min" },
+      { name: "Fill UV Gel", price: "From $35", duration: "30 min" },
+      { name: "Full Set Acrylic", price: "From $35", duration: "30 min" },
+      { name: "Fill Acrylic", price: "From $30", duration: "30 min" },
+      { name: "Fill Bio Gel", price: "$40", duration: "45 min" },
     ],
   },
   {
-    title: "Treatments",
+    title: "Manicure & Pedicure",
     items: [
-      { name: "Gel Polish Application", price: "$25" },
-      { name: "Paraffin Wax Treatment", price: "$30" },
+      { name: "Manicure Regular", price: "$25", duration: "30 min" },
+      { name: "Pedicure Regular", price: "$35", duration: "30 min" },
+      { name: "Manicure Shellac", price: "$35", duration: "30 min" },
+      { name: "Pedicure Shellac", price: "$45", duration: "45 min" },
+      { name: "Manicure & Pedicure Regular", price: "$55", duration: "60 min" },
+      { name: "Manicure Shellac & Pedicure Shellac", price: "$75", duration: "60 min" },
+      { name: "Pedicure Shellac & Manicure Regular", price: "$65", duration: "60 min" },
+      { name: "Shellac Polish Change (Toe)", price: "$30", duration: "30 min" },
+      { name: "Shellac Polish Change (Hand)", price: "$25", duration: "30 min" },
     ],
   },
   {
-    title: "Add-ons",
+    title: "Additional Services",
     items: [
-      { name: "Artisan Nail Art", price: "From $15" },
-      { name: "French Finish", price: "$10" },
+      { name: "Toe Polish Change", price: "$15", duration: "15 min" },
+      { name: "Hand Polish Change", price: "$10", duration: "15 min" },
+      { name: "Nail Art", price: "From $5", duration: "15 min" },
+      { name: "Take Off Only", price: "$15", duration: "15 min" },
+    ],
+  },
+  {
+    title: "Waxing",
+    items: [
+      { name: "Brazilian Wax", price: "From $40", duration: "45 min" },
+      { name: "Full Leg Wax", price: "From $45", duration: "45 min" },
+      { name: "Half Leg Wax", price: "$25", duration: "30 min" },
+      { name: "Full Arm Wax", price: "$30", duration: "30 min" },
+      { name: "Half Arm Wax", price: "$20", duration: "15 min" },
+      { name: "Full Face Wax", price: "$30", duration: "30 min" },
+      { name: "Under Arm Wax", price: "$15", duration: "15 min" },
+      { name: "Bikini Wax", price: "$25", duration: "30 min" },
+      { name: "Back Wax", price: "$40", duration: "45 min" },
+      { name: "Eyebrow Wax", price: "$10", duration: "15 min" },
+      { name: "Eyebrow + Tinting", price: "$25", duration: "30 min" },
+      { name: "Lip or Chin Wax", price: "$5", duration: "15 min" },
     ],
   },
 ];
@@ -74,11 +107,16 @@ function ServiceAccordion({ group, defaultOpen }: { group: ServiceGroup; default
         <div className="p-6 space-y-4 bg-surface">
           {group.items.map((item) => (
             <div key={item.name} className="flex justify-between items-center group">
-              <span className="font-body-lg text-on-surface group-hover:text-primary transition-colors">
-                {item.name}
-              </span>
+              <div className="flex flex-col">
+                <span className="font-body-lg text-on-surface group-hover:text-primary transition-colors">
+                  {item.name}
+                </span>
+                <span className="font-body-sm text-body-sm text-on-surface-variant/70">
+                  {item.duration}
+                </span>
+              </div>
               <div className="flex-grow mx-4 border-b border-dotted border-outline-variant/50" />
-              <span className="font-headline-md text-primary">{item.price}</span>
+              <span className="font-headline-md text-primary whitespace-nowrap">{item.price}</span>
             </div>
           ))}
         </div>

@@ -9,20 +9,28 @@ export const TAGLINE = "Exquisite Nails, Elevated Service";
 export const DESCRIPTION =
   "Experience the ultimate in nail care and relaxation at Shalala Nail Bar — a curated sanctuary where beauty meets precision.";
 
-export const CONTACT_EMAIL = "hello@shalalanailbar.ca";
-export const PHONE_DISPLAY = "(416) 555-0142";
-export const PHONE_HREF = "tel:+14165550142";
+export const CONTACT_EMAIL = "Shalala.nailbar.innisfil@gmail.com";
+export const PHONE_DISPLAY = "(705) 436-9930";
+export const PHONE_HREF = "tel:+17054369930";
 
 export const ADDRESS = {
-  street: "123 Main Street",
-  unit: "Unit 4",
-  city: "Toronto",
+  street: "8056 Yonge St",
+  unit: "",
+  city: "Innisfil",
   region: "ON",
-  postalCode: "M5V 2T6",
+  postalCode: "L9S 1L6",
   country: "CA",
 };
-export const ADDRESS_ONE_LINE = `${ADDRESS.street}, ${ADDRESS.unit}, ${ADDRESS.city}, ${ADDRESS.region} ${ADDRESS.postalCode}`;
-export const MAPS_HREF = "https://maps.google.com/?q=" + encodeURIComponent(ADDRESS_ONE_LINE);
+export const ADDRESS_ONE_LINE = `${ADDRESS.street}, ${ADDRESS.city}, ${ADDRESS.region} ${ADDRESS.postalCode}`;
+
+// Exact plaza unit pin — geocoding the street address alone lands on the
+// wrong building on this stretch of Yonge St, so we link straight to
+// coordinates instead.
+export const LAT = 44.33132313606657;
+export const LNG = -79.62202574455563;
+export const MAPS_HREF = `https://maps.google.com/?q=${LAT},${LNG}`;
+
+export const BOOKING_URL = "https://trykeshi.com/shalala-nail-bar";
 
 export const SOCIAL = {
   facebook: "https://facebook.com/shalalanailbar",
