@@ -1,0 +1,43 @@
+Category,Service,Price,Duration
+Nail Services,Fill Bio Gel,$55,60 min
+Nail Services,Full Set Bio Gel,$65,60 min
+Nail Services,Set Solar,$60,60 min
+Nail Services,Fill Solar,$50,45 min
+Nail Services,Manicure Regular,$30,30 min
+Nail Services,Pedicure Regular,$40,30 min
+Nail Services,Manicure Shellac,$40,30 min
+Nail Services,Pedicure Shellac,$50,60 min
+Nail Services,Manicure & Pedicure Shellac,$85,60 min
+Nail Services,Manicure & Pedicure Regular,$65,60 min
+Kid Services (Under 9 Years Old),Manicure Kid,$20,30 min
+Kid Services (Under 9 Years Old),Pedicure Kid,$30,30 min
+Kid Services (Under 9 Years Old),Manicure & Pedicure Kid,$45,60 min
+Nail Add-Ons & Changes,Shellac Polish Change (Toe),$30,30 min
+Nail Add-Ons & Changes,Shellac Polish Change (Hand),$25,30 min
+Nail Add-Ons & Changes,Toe Polish Change,$15,15 min
+Nail Add-Ons & Changes,Hand Polish Change,$15,15 min
+Nail Add-Ons & Changes,Nail Art,$15+,15 min
+Nail Add-Ons & Changes,Take Off Shellac,$10,15 min
+Nail Add-Ons & Changes,Take Off Extension Nail,$20,15 min
+Nail Add-Ons & Changes,Length,$5+,15 min
+Nail Add-Ons & Changes,Shape Change,$5,15 min
+Nail Add-Ons & Changes,French,$10+,15 min
+Waxing Services,Brazilian Wax,$50,45 min
+Waxing Services,Full Leg Wax,$55,45 min
+Waxing Services,Half Leg Wax,$30,30 min
+Waxing Services,Full Arm Wax,$40,30 min
+Waxing Services,Half Arm Wax,$25,15 min
+Waxing Services,Full Face Wax,$40,30 min
+Waxing Services,Under Arm Wax,$20,15 min
+Waxing Services,Bikini Wax,$25,30 min
+Waxing Services,Back Wax,$50,45 min
+Waxing Services,Eyebrow Wax,$15,15 min
+Waxing Services,Eyebrow + Tinting,$35,30 min
+Waxing Services,Tinting Eyebrows,$20,15 min
+Waxing Services,Tinting Eyelash,$40,30 min
+Waxing Services,Lip Wax,$10,15 min
+Waxing Services,Chin Wax,$10,15 min
+Waxing Services,Parafin (Hand or Feet),$15,15 min
+Waxing Services,Nose/Ears/Side Burn Wax,$10,15 min
+Waxing Services,Stomach Wax,$25+,30 min
+Waxing Services,Chest Wax,$25+,30 min
