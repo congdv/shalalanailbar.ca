@@ -2,9 +2,9 @@ import { BOOKING_URL } from "@/lib/business";
 
 export default function PromoBanner() {
   return (
-    <div className="bg-primary text-on-primary text-center px-6 py-2.5">
-      <p className="font-label-sm text-label-sm uppercase tracking-widest">
-        Soft Opening Special — 20% Off All Services · Oct 1 – Oct 31{" "}
+    <div className="bg-primary text-on-primary text-center px-6 py-4">
+      <p className="text-sm sm:text-base font-semibold uppercase tracking-widest">
+        Soft Opening Special — 20% Off All Services · Oct 2 – Oct 31{" "}
         <a
           href={BOOKING_URL}
           target="_blank"
