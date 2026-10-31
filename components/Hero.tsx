@@ -45,10 +45,10 @@ export default function Hero() {
       <div className="w-full md:w-1/2 hidden md:block">
         <div className="aspect-[4/5] rounded-full overflow-hidden gold-border p-2 shadow-2xl relative">
           <Image
-            src="/images/hero-manicure.jpg"
-            alt="Close up of a perfect, minimalist almond-shaped manicure with a glossy nude finish and a single delicate gold flake accent on one nail. Soft, high-key lighting."
-            width={1376}
-            height={752}
+            src="/images/nails-nude.jpg"
+            alt="Hand with glossy nude square nails resting on soft white fur."
+            width={1128}
+            height={1800}
             className="w-full h-full object-cover rounded-full"
             priority
           />

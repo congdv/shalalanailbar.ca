@@ -10,10 +10,10 @@ export default function About() {
         <div className="w-full md:w-1/2 order-2 md:order-1 relative">
           <div className="aspect-[4/5] rounded-t-full overflow-hidden gold-border p-2">
             <Image
-              src="/images/about-salon.jpg"
-              alt="A serene, minimalist salon interior with soft cream walls, warm ambient lighting, and elegant, modern seating. A pristine manicure station is in focus, reflecting a luxurious and tranquil atmosphere."
-              width={1376}
-              height={768}
+              src="/images/manicure-polish.jpg"
+              alt="Technician applying clear polish over a natural French manicure."
+              width={1013}
+              height={1800}
               className="w-full h-full object-cover rounded-t-full"
             />
           </div>

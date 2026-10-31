@@ -2,23 +2,31 @@ import Image from "next/image";
 
 const GALLERY_IMAGES = [
   {
-    src: "/images/hero-manicure.jpg",
-    alt: "Close up of a perfect, minimalist almond-shaped manicure with a glossy nude finish and a single delicate gold flake accent on one nail. Soft, high-key lighting.",
+    src: "/images/manicure-salon.jpg",
+    alt: "Nail technician shaping a client's nude almond nails at a salon table.",
+    width: 1800,
+    height: 1200,
     offset: false,
   },
   {
-    src: "/images/gallery-2.jpg",
-    alt: "Aesthetically pleasing overhead shot of perfectly manicured hands resting softly on a plush, cream-colored silk fabric. The nails feature a sophisticated French tip design in soft blush.",
+    src: "/images/manicure-polish.jpg",
+    alt: "Technician applying clear polish over a natural French manicure.",
+    width: 1013,
+    height: 1800,
     offset: true,
   },
   {
-    src: "/images/gallery-3.jpg",
-    alt: "Detailed view of luxury pedicure setting: clean, pedicured feet with a timeless red polish resting near a marble basin filled with warm water, rose petals, and a soft glow.",
+    src: "/images/nails-nude.jpg",
+    alt: "Hand with glossy nude square nails resting on soft white fur.",
+    width: 1128,
+    height: 1800,
     offset: false,
   },
   {
-    src: "/images/gallery-4.jpg",
-    alt: "Close up of elegant, elongated stiletto nails featuring a matte dusty rose finish with intricate, ultra-thin metallic gold line art. Minimalist and chic aesthetic.",
+    src: "/images/manicure-teal.jpg",
+    alt: "Close up of soft pink polish being brushed onto a client's nail.",
+    width: 1800,
+    height: 1197,
     offset: true,
   },
 ];
@@ -50,8 +58,8 @@ export default function Gallery() {
               <Image
                 src={img.src}
                 alt={img.alt}
-                width={1408}
-                height={768}
+                width={img.width}
+                height={img.height}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
